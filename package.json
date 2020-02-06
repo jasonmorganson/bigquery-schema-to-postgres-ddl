@@ -1,0 +1,41 @@
+{
+  "name": "bigquery-schema-to-postgres-ddl",
+  "version": "0.0.0",
+  "description": "BigQuery JSON schema to Postgres DDL",
+  "main": "build/index.js",
+  "bin": {
+    "bigquery-schema-to-postgres-ddl": "./bin/bigquery-schema-to-postgres-ddl"
+  },
+  "scripts": {
+    "format": "prettier --write **/*.js",
+    "lint": "eslint .",
+    "test": "jest",
+    "prebuild": "npm run format && npm run lint && npm run test",
+    "build": "ncc build --minify --v8-cache --external knex --out build src/index.js",
+    "postbuild": "pkg --public --targets node12,node12-alpine --output dist/bigquery-schema-to-postgres-ddl build/index.js"
+  },
+  "author": "Jason Morganson",
+  "license": "ISC",
+  "devDependencies": {
+    "@zeit/ncc": "^0.20.5",
+    "eslint": "^6.4.0",
+    "jest": "^24.9.0",
+    "pkg": "^4.4.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "knex": "^0.19.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonmorganson/bigquery-schema-to-postgres-ddl.git"
+  },
+  "keywords": [
+    "bigquery",
+    "postgres"
+  ],
+  "bugs": {
+    "url": "https://github.com/jasonmorganson/bigquery-schema-to-postgres-ddl/issues"
+  },
+  "homepage": "https://github.com/jasonmorganson/bigquery-schema-to-postgres-ddl#readme"
+}

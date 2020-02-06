@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Converting BAD matches snapshot 1`] = `"create table \\"SCHEMA\\".\\"TABLE\\" ()"`;
+
+exports[`Converting BOOLEAN matches snapshot 1`] = `"create table \\"SCHEMA\\".\\"TABLE\\" (\\"BOOLEAN\\" boolean)"`;
+
+exports[`Converting DATE matches snapshot 1`] = `"create table \\"SCHEMA\\".\\"TABLE\\" (\\"DATE\\" timestamptz)"`;
+
+exports[`Converting FLOAT matches snapshot 1`] = `"create table \\"SCHEMA\\".\\"TABLE\\" (\\"FLOAT\\" FLOAT)"`;
+
+exports[`Converting GEOGRAPHY matches snapshot 1`] = `"create table \\"SCHEMA\\".\\"TABLE\\" (\\"GEOGRAPHY\\" public.GEOGRAPHY)"`;
+
+exports[`Converting INTEGER matches snapshot 1`] = `"create table \\"SCHEMA\\".\\"TABLE\\" (\\"INTEGER\\" integer)"`;
+
+exports[`Converting NUMERIC matches snapshot 1`] = `"create table \\"SCHEMA\\".\\"TABLE\\" (\\"NUMERIC\\" NUMERIC)"`;
+
+exports[`Converting STRING matches snapshot 1`] = `"create table \\"SCHEMA\\".\\"TABLE\\" (\\"STRING\\" text)"`;
+
+exports[`Converting TIMESTAMP matches snapshot 1`] = `"create table \\"SCHEMA\\".\\"TABLE\\" (\\"TIMESTAMP\\" timestamptz)"`;

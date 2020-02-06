@@ -1,0 +1,8 @@
+.dockerignore
+.eslintignore
+.eslintrc
+.gitignore
+.prettierignore
+.prettierrc
+src
+Dockerfile
