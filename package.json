@@ -24,7 +24,7 @@
     "prettier": "^1.18.2"
   },
   "dependencies": {
-    "knex": "^0.19.4"
+    "knex": "^0.19.5"
   },
   "repository": {
     "type": "git",
